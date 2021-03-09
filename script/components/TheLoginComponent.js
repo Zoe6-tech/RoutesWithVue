@@ -1,5 +1,5 @@
 export default {
-    name: "TheLoginCompnent",
+    name: "TheLoginPage",
     
     template:
         `
@@ -24,7 +24,15 @@ export default {
 
     methods: {
         storeCreds() {
-            window.localStorage.setItem("creds", JSON.stringify({name: this.username, pword: this.password}));
+            window.localStorage.setItem("creds", JSON.stringify({
+                name: this.username, 
+                pword: this.password,
+                 userId:"1234"
+                }));
+            window.localStorage.setItem("progress", JSON.stringify({
+                tutename: "Using react", 
+                vidsession:1 
+            }));
         }
     }
 }
