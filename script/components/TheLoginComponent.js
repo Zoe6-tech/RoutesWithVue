@@ -29,6 +29,7 @@ export default {
                 pword: this.password,
                  userId:"1234"
                 }));
+                
             window.localStorage.setItem("progress", JSON.stringify({
                 tutename: "Using react", 
                 vidsession:1 
